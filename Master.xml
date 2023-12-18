@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DecOpenCartSuite">
+  <listeners>
+	  <listener class-name="utilities.ExtentReportManager"></listener>
+  </listeners>
+  <test thread-count="5" name="DecOpenCartTest">
+	  
+	  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+  <class name="testCases.TC_Account_RegistrationTest"/>  
+  <class name="testCases.TC_LoginTest"/> 
+    <class name="testCases.TC_LoginDDT"/> 
+    </classes>
+  </test> <!-- DecOpenCartTest -->
+</suite> <!-- DecOpenCartSuite -->
